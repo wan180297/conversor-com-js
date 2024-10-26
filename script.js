@@ -51,26 +51,32 @@ function convertValues() {
 
 };
 function changeCurrencyOne() {
+    const inputCurrencyValue = document.querySelector(".input-currency")
     const currencyNameOne = document.querySelector("#currency-name-one");
     const currencyImgOne = document.querySelector("#currency-img-one");
 
     if(currencySelectOne.value === "real") {
+        inputCurrencyValue.placeholder = "R$ 10.000,00";
         currencyNameOne.innerHTML = "Real brasileiro";
-        currencyImgOne.src = "./assets/images/real.png"
+        currencyImgOne.src = "./assets/images/real.png";
     };
     if(currencySelectOne.value === "dolar") {
+        inputCurrencyValue.placeholder = "$ 10.000,00";
         currencyNameOne.innerHTML = "Dólar americano";
-        currencyImgOne.src = "./assets/images/dolar.png"
+        currencyImgOne.src = "./assets/images/dolar.png";
     };
     if(currencySelectOne.value === "euro") {
+        inputCurrencyValue.placeholder = "€ 10.000,00";
         currencyNameOne.innerHTML = "Euro";
-        currencyImgOne.src = "./assets/images/euro.png"
+        currencyImgOne.src = "./assets/images/euro.png";
     };
     if(currencySelectOne.value === "bitcoin") {
+        inputCurrencyValue.placeholder = "BTC 10.000,00";
         currencyNameOne.innerHTML = "Bitcoin";
         currencyImgOne.src = "./assets/images/bitcoin 1.png"
     };
     if(currencySelectOne.value === "libra") {
+        inputCurrencyValue.placeholder = "£ 10.000,00";
         currencyNameOne.innerHTML = "Libra";
         currencyImgOne.src = "./assets/images/libra 1.png"
     };
